@@ -71,12 +71,21 @@ body{
 		}
 }
 .img-rabbit{
-	width: 100%;
+	max-width: 80%;
+	height: auto;
 	object-fit: cover;
 	display: block;
+	margin: 0 auto;
 }
 
-.left, .right{
+.left{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.right{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
