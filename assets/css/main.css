@@ -1,10 +1,26 @@
 body{
-	background-color: #282a36;
+	background-color: #282a36 !important;
 	font-family: "Crimson Text";
 }
 
+html{
+	background-color: #282a36 !important;
+}
+
 .main{
-	background: #1e1f29;
+	background: #1e1f29 !important;
+}
+
+.container{
+	background-color: #1e1f29 !important;
+}
+
+#index, #about_scroll, #work_scroll, #contact_scroll{
+	background-color: #282a36 !important;
+}
+
+.pages{
+	background-color: #282a36 !important;
 }
 
 .home-description{
