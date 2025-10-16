@@ -41,8 +41,16 @@ body{
 		.main{
 			height: 100vh;
 			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
+		.main .row{
+			width: 100%;
+			display: flex;
+			align-items: center;
+		}
 
 		.btn-group-vertical{
     		padding: 20px 87.5px;
@@ -64,6 +72,14 @@ body{
 }
 .img-rabbit{
 	width: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.left, .right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .btn-rabbit{
 	background-color: #fff;
