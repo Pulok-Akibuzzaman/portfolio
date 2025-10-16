@@ -61,12 +61,14 @@ html{
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			background: #1e1f29 !important;
 		}
 
 		.main .row{
 			width: 100%;
 			display: flex;
 			align-items: center;
+			background: transparent !important;
 		}
 
 		.btn-group-vertical{
@@ -100,12 +102,23 @@ html{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: transparent !important;
 }
 
 .right{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background: transparent !important;
+}
+
+/* Force dark backgrounds on all sections */
+.row, .home{
+	background: transparent !important;
+}
+
+[class*="col-"]{
+	background: transparent !important;
 }
 .btn-rabbit{
 	background-color: transparent;
@@ -379,3 +392,19 @@ footer a:hover{
 .show{
 	display: block;
 }
+
+/* ===== DRACULA THEME OVERRIDES - KEEP AT END ===== */
+* {
+	box-sizing: border-box;
+}
+
+body, html, #index, #about_scroll, #work_scroll, #contact_scroll,
+.pages, .container, .container-fluid, .main, 
+div[class*="col-"], .row, .home {
+	background-color: #282a36 !important;
+}
+
+.container.main, .main {
+	background-color: #1e1f29 !important;
+}
+
