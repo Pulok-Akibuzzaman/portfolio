@@ -1,26 +1,32 @@
 body{
 	background-color: #282a36 !important;
+	background: #282a36 !important;
 	font-family: "Crimson Text";
 }
 
 html{
 	background-color: #282a36 !important;
+	background: #282a36 !important;
 }
 
 .main{
+	background-color: #1e1f29 !important;
 	background: #1e1f29 !important;
 }
 
 .container{
 	background-color: #1e1f29 !important;
+	background: #1e1f29 !important;
 }
 
 #index, #about_scroll, #work_scroll, #contact_scroll{
 	background-color: #282a36 !important;
+	background: #282a36 !important;
 }
 
 .pages{
 	background-color: #282a36 !important;
+	background: #282a36 !important;
 }
 
 .home-description{
@@ -398,13 +404,46 @@ footer a:hover{
 	box-sizing: border-box;
 }
 
-body, html, #index, #about_scroll, #work_scroll, #contact_scroll,
-.pages, .container, .container-fluid, .main, 
-div[class*="col-"], .row, .home {
+/* Force dark background everywhere */
+body, html {
 	background-color: #282a36 !important;
+	background: #282a36 !important;
 }
 
-.container.main, .main {
+#index, #about_scroll, #work_scroll, #contact_scroll,
+.pages {
+	background-color: #282a36 !important;
+	background: #282a36 !important;
+}
+
+.container, .container-fluid {
 	background-color: #1e1f29 !important;
+	background: #1e1f29 !important;
+}
+
+.container.main {
+	background-color: #1e1f29 !important;
+	background: #1e1f29 !important;
+}
+
+div.main {
+	background-color: #1e1f29 !important;
+	background: #1e1f29 !important;
+}
+
+.row, .home {
+	background-color: transparent !important;
+	background: transparent !important;
+}
+
+div[class*="col-"] {
+	background-color: transparent !important;
+	background: transparent !important;
+}
+
+#index_left, #index_right, #about_left, #about_right,
+#work_left, #work_right, #contact_left, #contact_right {
+	background-color: transparent !important;
+	background: transparent !important;
 }
 
