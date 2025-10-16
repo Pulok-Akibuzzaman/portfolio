@@ -43,9 +43,6 @@ body{
 			overflow: hidden;
 		}
 
-		.img-rabbit{
-			/*margin: 0 -15px;*/
-		}
 
 		.btn-group-vertical{
     		padding: 20px 87.5px;
@@ -119,7 +116,7 @@ footer{
     font-family: "Crimson";
     font-size: 17px;
     font-style: italic;
-    vertical-align: middle;
+	/* vertical-align is ignored on block elements */
     text-align: center;
     display: block;
     clear: both;
@@ -202,7 +199,7 @@ footer{
 
 .submit{
 
-	font-family: "Crimson"
+	font-family: "Crimson";
 	font-size: 16px;
 }
 
@@ -229,7 +226,7 @@ footer{
 	bottom: -7px;
 }
 
-#watermark .marker{
+.watermark .marker{
 	position: absolute;
 	font-size: 60px;
 	opacity: 0.1;
@@ -239,7 +236,7 @@ footer{
 	top: -5px;
 }
 
-#watermark{
+.watermark{
 	position: relative;
 }
 
@@ -306,6 +303,9 @@ footer{
 	}
 }
 .custom_btn{
+	animation-duration: 3s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
   -vendor-animation-duration: 3s;
   -vendor-animation-delay: 2s;
   -vendor-animation-iteration-count: infinite;
