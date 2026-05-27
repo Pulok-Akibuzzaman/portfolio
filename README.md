@@ -5,3 +5,7 @@ A portfolio website showcasing my academic background, research experience, and 
 ## Live
 
 https://pulok-akibuzzaman.github.io/portfolio/
+
+## Credits
+
+Inspired by [Istiaq-Edu](https://github.com/Istiaq-Edu).
