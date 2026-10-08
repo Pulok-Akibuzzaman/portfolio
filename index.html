@@ -426,14 +426,17 @@
     .downloads { text-align: center; }
     .download-cards {
       margin-top: 48px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 16px;
-      max-width: 720px;
+      max-width: 900px;
       margin-left: auto;
       margin-right: auto;
     }
     .download-card {
+      flex: 1 1 200px;
+      max-width: 260px;
       padding: 28px 20px;
       background: rgba(59, 130, 246, 0.03);
       border: 1px solid var(--border);
@@ -853,7 +856,8 @@
     @media (max-width: 768px) {
       .problem-grid { grid-template-columns: 1fr; }
       .features-grid { grid-template-columns: 1fr; }
-      .download-cards { grid-template-columns: 1fr; max-width: 320px; }
+      .download-cards { flex-direction: column; align-items: center; max-width: 320px; }
+      .download-card { width: 100%; max-width: 100%; }
       .nav-links { display: none; }
       .hero { padding: 60px 0 40px; }
       section { padding: 60px 0; }
@@ -976,6 +980,16 @@
           <div class="pipeline-line"></div>
         </div>
         <div class="pipeline-content">
+          <h4>Teaching Assistant</h4>
+          <p><strong>June 2026 – Sept 2026</strong><br>Assisting in the delivery of CSE103 (Structured Programming / C Programming) and CSE246 (Algorithms) courses. Supporting students through lab sessions, consultations, and academic guidance. Helping evaluate assignments, quizzes, and programming tasks.</p>
+        </div>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-connector">
+          <div class="pipeline-dot"></div>
+          <div class="pipeline-line"></div>
+        </div>
+        <div class="pipeline-content">
           <h4>Private Tutor</h4>
           <p><strong>Aug 2023 – July 2024</strong><br>Tutored students from Play Group to Class 10 in multiple subjects. Prepared lesson plans and supported exam preparation through coaching and online sessions.</p>
         </div>
@@ -1062,6 +1076,18 @@
         <p>Open Source Projects</p>
         <span class="download-link">Follow →</span>
       </a>
+      <a href="https://scholar.google.com/citations?user=-lUOL5QAAAAJ&hl=en&authuser=1" target="_blank" class="download-card">
+        <div class="platform-icon">🎓</div>
+        <h4>Google Scholar</h4>
+        <p>Research Publications</p>
+        <span class="download-link">View Profile →</span>
+      </a>
+      <a href="https://orcid.org/my-orcid?orcid=0009-0004-4119-2333" target="_blank" class="download-card">
+        <div class="platform-icon">🆔</div>
+        <h4>ORCID</h4>
+        <p>0009-0004-4119-2333</p>
+        <span class="download-link">View Profile →</span>
+      </a>
       <a href="mailto:pulok519@gmail.com" class="download-card">
         <div class="platform-icon">✉️</div>
         <h4>Email</h4>
@@ -1079,6 +1105,8 @@
       © 2026 Pulok Akibuzzaman.
     </div>
     <div class="footer-links">
+      <a href="https://scholar.google.com/citations?user=-lUOL5QAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
+      <a href="https://orcid.org/my-orcid?orcid=0009-0004-4119-2333" target="_blank">ORCID</a>
       <a href="https://www.coursera.org/user/0741b9b5295f8f84a963a95a73976455" target="_blank">Coursera</a>
       <a href="https://www.datacamp.com/portfolio/pulok519" target="_blank">DataCamp</a>
       <a href="https://dhmairg.net/" target="_blank">DHMAINetRG</a>
